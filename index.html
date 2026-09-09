@@ -1,0 +1,178 @@
+```html
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+
+        <div class="logo">
+            🍉 <span>MY STORE</span>
+        </div>
+
+        <nav>
+            <a class="active" href="index.html">
+                🏠 Dashboard
+            </a>
+
+            <a href="sell.html">
+                🛒 ขายสินค้า
+            </a>
+
+            <a href="stock.html">
+                📦 สต๊อกสินค้า
+            </a>
+
+            <a href="raw.html">
+                🧪 วัตถุดิบ
+            </a>
+
+            <a href="history.html">
+                🧾 ประวัติการขาย
+            </a>
+
+            <a href="report.html">
+                📊 รายงาน
+            </a>
+        </nav>
+
+        <div class="bottom-menu">
+            ⚙️ ตั้งค่า
+        </div>
+
+    </aside>
+
+
+    <!-- Main Content -->
+    <main class="main">
+
+        <header>
+            <div>
+                <h1>Dashboard</h1>
+                <p>ภาพรวมร้านค้าของคุณวันนี้ 👋</p>
+            </div>
+
+            <div class="profile">
+                👤 ผู้ดูแลร้าน
+            </div>
+        </header>
+
+
+        <!-- Summary Cards -->
+        <section class="cards">
+
+            <div class="card">
+                <div class="icon">💰</div>
+                <div>
+                    <p>ยอดขายวันนี้</p>
+                    <h2 id="todaySales">฿0</h2>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="icon">🛒</div>
+                <div>
+                    <p>ออเดอร์วันนี้</p>
+                    <h2 id="todayOrders">0</h2>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="icon">📦</div>
+                <div>
+                    <p>สินค้าพร้อมขาย</p>
+                    <h2 id="readyProducts">0</h2>
+                </div>
+            </div>
+
+            <div class="card warning">
+                <div class="icon">⚠️</div>
+                <div>
+                    <p>สินค้าใกล้หมด</p>
+                    <h2 id="lowProducts">0</h2>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- Quick Menu -->
+        <section class="section">
+
+            <h2>เมนูด่วน</h2>
+
+            <div class="quick-menu">
+
+                <button onclick="window.location.href='sell.html'">
+                    🛒
+                    <span>ขายสินค้า</span>
+                </button>
+
+                <button onclick="window.location.href='stock.html'">
+                    📦
+                    <span>เพิ่มสต๊อก</span>
+                </button>
+
+                <button onclick="window.location.href='raw.html'">
+                    🧪
+                    <span>จัดการวัตถุดิบ</span>
+                </button>
+
+                <button onclick="window.location.href='history.html'">
+                    🧾
+                    <span>ดูประวัติการขาย</span>
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- Stock -->
+        <section class="section">
+
+            <div class="section-title">
+
+                <h2>สต๊อกสินค้า</h2>
+
+                <button
+                    class="view-all"
+                    onclick="window.location.href='stock.html'"
+                >
+                    ดูทั้งหมด →
+                </button>
+
+            </div>
+
+
+            <div
+                class="stock-list"
+                id="dashboardStockList"
+            >
+
+                <div class="loading">
+                    กำลังโหลดสต๊อก...
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script
+        type="module"
+        src="script.js"
+    ></script>
+
+</body>
+</html>
+```

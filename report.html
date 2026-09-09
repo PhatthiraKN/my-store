@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>รายงาน - My Store</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+
+    <aside class="sidebar">
+
+        <div class="logo">
+            🍉 <span>MY STORE</span>
+        </div>
+
+        <nav>
+
+            <a href="index.html">
+                🏠 Dashboard
+            </a>
+
+            <a href="sell.html">
+                🛒 ขายสินค้า
+            </a>
+
+            <a href="stock.html">
+                📦 สต๊อกสินค้า
+            </a>
+
+            <a href="raw.html">
+                🧪 วัตถุดิบ
+            </a>
+
+            <a href="history.html">
+                🧾 ประวัติการขาย
+            </a>
+
+            <a class="active" href="report.html">
+                📊 รายงาน
+            </a>
+
+        </nav>
+
+        <div class="bottom-menu">
+            ⚙️ ตั้งค่า
+        </div>
+
+    </aside>
+
+
+    <!-- Main -->
+
+    <main class="main">
+
+        <header>
+
+            <div>
+
+                <h1>📊 รายงานการขาย</h1>
+
+                <p>
+                    สรุปข้อมูลการขายของร้าน
+                </p>
+
+            </div>
+
+        </header>
+
+
+        <!-- Summary -->
+
+        <section class="history-summary">
+
+            <div class="summary-card">
+
+                <span>
+                    💰 ยอดขายทั้งหมด
+                </span>
+
+                <strong id="reportSales">
+                    ฿0
+                </strong>
+
+            </div>
+
+
+            <div class="summary-card">
+
+                <span>
+                    🧾 จำนวนบิล
+                </span>
+
+                <strong id="reportBills">
+                    0
+                </strong>
+
+            </div>
+
+        </section>
+
+
+        <!-- Best Selling -->
+
+        <section class="section">
+
+            <div class="section-title">
+
+                <h2>
+                    🥤 สินค้าขายดี
+                </h2>
+
+            </div>
+
+
+            <div
+                id="bestProducts"
+                class="history-box"
+            >
+
+                <div class="loading">
+                    กำลังโหลดข้อมูล...
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Daily Sales -->
+
+        <section class="section">
+
+            <div class="section-title">
+
+                <h2>
+                    📅 ยอดขายรายวัน
+                </h2>
+
+            </div>
+
+
+            <div
+                id="dailySales"
+                class="history-box"
+            >
+
+                <div class="loading">
+                    กำลังโหลดข้อมูล...
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script
+        type="module"
+        src="./report.js"
+    ></script>
+
+</body>
+
+</html>

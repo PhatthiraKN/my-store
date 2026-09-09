@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<html lang="th">
+
+<head>
+
+```
+<meta charset="UTF-8">
+
+<meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+
+<title>สต๊อกสินค้า - My Store</title>
+
+<link rel="stylesheet"
+    href="style.css">
+```
+
+</head>
+
+<body>
+
+```
+<!-- Sidebar -->
+
+<aside class="sidebar">
+
+    <div class="logo">
+        🍉 <span>MY STORE</span>
+    </div>
+
+    <nav>
+
+        <a href="index.html">
+            🏠 Dashboard
+        </a>
+
+        <a href="#">
+            🛒 ขายสินค้า
+        </a>
+
+        <a class="active"
+            href="stock.html">
+            📦 สต๊อกสินค้า
+        </a>
+
+        <a href="#">
+            🧪 วัตถุดิบ
+        </a>
+
+        <a href="#">
+            🧾 ประวัติการขาย
+        </a>
+
+        <a href="#">
+            📊 รายงาน
+        </a>
+
+    </nav>
+
+</aside>
+
+
+<!-- Main -->
+
+<main class="main">
+
+    <header>
+
+        <div>
+
+            <h1>📦 สต๊อกสินค้า</h1>
+
+            <p>
+                จัดการสินค้าพร้อมขาย
+            </p>
+
+        </div>
+
+        <button class="add-button" onclick="window.addProduct()">
+    ＋ เพิ่มสินค้า
+</button>
+
+    </header>
+
+
+    <!-- Search -->
+
+    <div class="search-box">
+
+        🔍
+
+        <input
+            type="text"
+            id="search"
+            placeholder="ค้นหาสินค้า..."
+            oninput="searchProduct()">
+
+    </div>
+
+
+    <!-- Product List -->
+
+    <div
+        id="productList"
+        class="product-grid">
+
+    <div
+    id="productList"
+    class="product-grid">
+</div>
+
+</main>
+
+<script type="module" src="./script.js"></script>
+
+</body>
+</html>

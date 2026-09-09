@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ขายสินค้า - My Store</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- เมนูด้านซ้าย -->
+    <aside class="sidebar">
+
+        <div class="logo">
+            🍉 <span>MY STORE</span>
+        </div>
+
+        <nav>
+
+            <a href="index.html">
+                🏠 Dashboard
+            </a>
+
+            <a class="active" href="sell.html">
+                🛒 ขายสินค้า
+            </a>
+
+            <a href="stock.html">
+                📦 สต๊อกสินค้า
+            </a>
+
+            <a href="raw.html">
+    🧪 วัตถุดิบ
+</a>
+
+           <a href="history.html">
+    🧾 ประวัติการขาย
+</a>
+
+            <a href="#">
+                📊 รายงาน
+            </a>
+
+        </nav>
+
+    </aside>
+
+
+    <!-- เนื้อหาหลัก -->
+    <main class="main">
+
+        <header>
+
+            <div>
+                <h1>🛒 ขายสินค้า</h1>
+
+                <p>
+                    เลือกเมนูที่ต้องการขายได้เลย 🥤💗
+                </p>
+            </div>
+
+        </header>
+
+
+        <!-- พื้นที่ขาย -->
+        <div class="sell-layout">
+
+
+            <!-- เมนูสินค้า -->
+            <section class="menu-section">
+
+                <h2>
+                    🥤 เมนูน้ำปั่น
+                </h2>
+
+                <div id="menuList" class="menu-grid">
+
+                    <!-- สินค้าจะถูกโหลดจาก Firebase -->
+
+                    <div class="loading">
+                        กำลังโหลดเมนู... 🍉
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- ตะกร้า -->
+            <section class="cart-section">
+
+                <div class="cart-box">
+
+                    <h2>
+                        🛒 ตะกร้าสินค้า
+                    </h2>
+
+                    <div id="cartList">
+
+                        <div class="empty-cart">
+                            🥤<br>
+                            ยังไม่มีสินค้าในตะกร้า
+                        </div>
+
+                    </div>
+
+
+                    <div class="cart-total">
+
+                        <span>
+                            รวมทั้งหมด
+                        </span>
+
+                        <strong id="cartTotal">
+                            ฿0
+                        </strong>
+
+                    </div>
+
+
+                    <button
+                        id="checkoutButton"
+                        class="checkout-button"
+                        disabled
+                    >
+                        💗 ยืนยันการขาย
+                    </button>
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </main>
+
+
+    <script type="module" src="./sell.js"></script>
+
+</body>
+
+</html>

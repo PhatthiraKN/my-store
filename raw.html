@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>วัตถุดิบ - My Store</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <aside class="sidebar">
+
+        <div class="logo">
+            🍉 <span>MY STORE</span>
+        </div>
+
+        <nav>
+
+            <a href="index.html">
+                🏠 Dashboard
+            </a>
+
+            <a href="sell.html">
+                🛒 ขายสินค้า
+            </a>
+
+            <a href="stock.html">
+                📦 สต๊อกสินค้า
+            </a>
+
+            <a class="active" href="raw.html">
+                🧪 วัตถุดิบ
+            </a>
+
+            <a href="history.html">
+    🧾 ประวัติการขาย
+</a>
+
+            <a href="#">
+                📊 รายงาน
+            </a>
+
+        </nav>
+
+    </aside>
+
+
+    <main class="main">
+
+        <header>
+
+            <div>
+                <h1>🧪 วัตถุดิบ</h1>
+
+                <p>
+                    จัดการวัตถุดิบและบรรจุภัณฑ์
+                </p>
+            </div>
+
+        </header>
+
+
+        <div class="search-box">
+
+            🔍
+
+            <input
+                type="text"
+                id="rawSearch"
+                placeholder="ค้นหาวัตถุดิบ..."
+            >
+
+        </div>
+
+
+        <div id="rawList" class="product-grid">
+
+            กำลังโหลดวัตถุดิบ...
+
+        </div>
+
+    </main>
+
+
+    <script type="module" src="./raw.js"></script>
+
+</body>
+
+</html>

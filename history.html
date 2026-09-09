@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ประวัติการขาย - My Store</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- เมนูด้านซ้าย -->
+    <aside class="sidebar">
+
+        <div class="logo">
+            🍉 <span>MY STORE</span>
+        </div>
+
+        <nav>
+
+            <a href="index.html">
+                🏠 Dashboard
+            </a>
+
+            <a href="sell.html">
+                🛒 ขายสินค้า
+            </a>
+
+            <a href="stock.html">
+                📦 สต๊อกสินค้า
+            </a>
+
+            <a href="raw.html">
+                🧪 วัตถุดิบ
+            </a>
+
+            <a class="active" href="history.html">
+                🧾 ประวัติการขาย
+            </a>
+
+            <a href="#">
+                📊 รายงาน
+            </a>
+
+        </nav>
+
+    </aside>
+
+
+    <!-- เนื้อหาหลัก -->
+    <main class="main">
+
+        <header>
+
+            <div>
+
+                <h1>
+                    🧾 ประวัติการขาย
+                </h1>
+
+                <p>
+                    ดูรายการขายสินค้าทั้งหมด
+                </p>
+
+            </div>
+
+        </header>
+
+
+        <!-- สรุปยอด -->
+        <div class="history-summary">
+
+            <div class="summary-card">
+
+                <span>
+                    💰 ยอดขายทั้งหมด
+                </span>
+
+                <strong id="totalSales">
+                    ฿0
+                </strong>
+
+            </div>
+
+
+            <div class="summary-card">
+
+                <span>
+                    🧾 จำนวนบิล
+                </span>
+
+                <strong id="totalBills">
+                    0
+                </strong>
+
+            </div>
+
+        </div>
+
+
+        <!-- ประวัติ -->
+        <div class="history-box">
+
+            <div id="historyList">
+
+                <div class="loading">
+                    กำลังโหลดประวัติการขาย...
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <script type="module" src="./history.js"></script>
+
+</body>
+
+</html>
